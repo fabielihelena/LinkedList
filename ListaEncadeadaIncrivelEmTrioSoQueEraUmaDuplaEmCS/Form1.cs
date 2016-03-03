@@ -12,10 +12,20 @@ namespace ListaEncadeadaIncrivelEmTrioSoQueEraUmaDuplaEmCS
 {
     public partial class Form1 : Form
     {
+        Lista lista;
         public Form1()
         {
             InitializeComponent();
+            lista = new Lista();
+            lista.AdicionarItens(new Item(lista.Contador + 1));
 
+        }
+
+        private void AdicionarElementos(object sender, EventArgs e)
+        {
+            Item item = new Item(lista.Contador + 1);
+            lista.AdicionarItens(item);
+            Console.WriteLine(lista.Contador);
         }
     }
 }

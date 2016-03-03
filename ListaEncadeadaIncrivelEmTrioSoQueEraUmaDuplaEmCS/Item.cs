@@ -9,15 +9,29 @@ namespace ListaEncadeadaIncrivelEmTrioSoQueEraUmaDuplaEmCS
     class Item
     {
         public int elemento;
+       
         public Item sucessor;
 
-        public int Elemento (int e)
+        public Item (int e)
         {
-            e = elemento;
+            elemento = e;
             sucessor = null;
-            return e;
         }
-
-      
+        public Item (int e, Item s)
+        {
+            elemento = e;
+            sucessor = s;
+        }
+        public int Valor
+        {
+            get { return elemento; }
+            set { elemento = value; }
+        }
+        public Item Sucessor
+        {
+            get { return sucessor; }
+            set { sucessor = value; }
+        }
+        
     }
 }
