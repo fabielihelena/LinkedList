@@ -63,9 +63,9 @@ namespace ListaEncadeadaIncrivelEmTrioSoQueEraUmaDuplaEmCS
             {
                 int contador = 0;
                 Item atual = E1;
-                while (atual.sucessor != null)
+                while (atual != null)
                 {
-                    E1 = E1.sucessor;
+                    atual = atual.sucessor;
                     contador++;
                 }
                 return contador;

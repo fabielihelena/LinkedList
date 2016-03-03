@@ -17,7 +17,7 @@ namespace ListaEncadeadaIncrivelEmTrioSoQueEraUmaDuplaEmCS
         {
             InitializeComponent();
             lista = new Lista();
-            lista.AdicionarItens(new Item(lista.Contador + 1));
+            lista.AdicionarItens(new Item(lista.Contador));
 
         }
 
